@@ -1,7 +1,5 @@
 body {
-	background:url(../images/bkg.png) no-repeat 0 0;
-	-moz-background-size: cover;
-	background-size: cover;
+	background:url(../images/bkg.png) repeat 0 0;
 }
 
 header#topHead {
@@ -85,12 +83,12 @@ section.mainContent .contentBy p {
 	font-size:11px;
 }
 
-section.mainContent ul{
+section.mainContent ul.subTitles {
 	text-align: center;
 	border-bottom: 1px solid #66625F;
 }
 
-section.mainContent ul li{
+section.mainContent ul.subTitles li{
 	font-family: Letter Gothic Std;
 	font-size: 24px;
 	text-transform: uppercase;
@@ -116,8 +114,9 @@ section.mainContent ul li{
 }
 
 .articleTitle h1.title1 {
-	font-size:44px;
+	font-size:42px;
 	color:#4c4846;
+	font-weight:400;
 	
 }
 
@@ -190,8 +189,8 @@ footer.articleNote {
 	-webkit-column-count: 2;
 	-moz-column-width: 13em;
 	-webkit-column-width: 13em;
-	-moz-column-gap: 1em;
-	-webkit-column-gap: 1em;
+	-moz-column-gap: 2em;
+	-webkit-column-gap: 2em;
 }
 
 .treeColumn {
@@ -199,13 +198,30 @@ footer.articleNote {
 	-webkit-column-count: 3;
 	-moz-column-width: 13em;
 	-webkit-column-width: 13em;
-	-moz-column-gap: 1em;
-	-webkit-column-gap: 1em;
+	-moz-column-gap: 2em;
+	-webkit-column-gap: 2em;
+}
+
+ul.treeColumn {
+	border:none;
+}
+
+ul.treeColumn li {
+	text-align:center;
+	font-family:'Courier', serif;
+	margin-bottom:8px;
+	padding-bottom:34px;
+	background:url(../images/tweet.png) no-repeat center bottom;
 }
 
 footer#footer {
 	margin-top:80px;
-	background: white;
+	background-color: rgba(68,64,64,0.50);
 	padding:6px 0 0 10px;
 	height:22px;
+}
+
+footer#footer a {
+	color:white;
+	text-decoration:none;
 }
