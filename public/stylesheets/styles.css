@@ -1,0 +1,211 @@
+body {
+	background:url(../images/bkg.png) no-repeat 0 0;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+header#topHead {
+	border-bottom:1px solid #66625f;
+	position:relative;
+}
+
+header#topHead .magmaLogo {
+	position:absolute;
+	left: -20px;
+}
+
+header#topHead nav {
+	font-family: 'Ubuntu Mono', sans-serif;
+	text-transform:uppercase;
+	margin:55px 0 18px 0;
+}
+
+header#topHead nav ul {
+	margin:0;
+	padding:0;
+}
+
+header#topHead nav li {
+	float:right;
+	list-style-type:none;
+	margin-left:20px;
+}
+
+header#topHead nav li a {
+	color:#202020;
+	text-decoration:none;
+}
+
+header#topHead nav li a.selected {
+	color:#ed8b09;
+}
+
+section.coverM {
+	margin-top:20px;
+	text-align:center;
+	overflow:hidden;
+	min-height:600px;
+}
+
+section.coverM ul li a{
+	color:#202020;
+	text-decoration:none;
+}
+
+section.mainContent {
+	border-top:1px solid #dedad6;
+	padding-top:1px;
+}
+
+section.mainContent img.coverM {
+	margin-top:20px;
+}
+
+section.mainContent .monthlyNo span {
+	font-family: 'Anton', sans-serif;
+	color:#56514f;
+	font-size:30px;
+	text-transform:uppercase;
+	opacity:0.4;filter: alpha(opacity=40) ;
+	line-height:23px;
+}
+
+section.mainContent .contentBy {
+	border-bottom:1px solid #9c9d9e;
+	color:#343433;
+	font-family: 'Courier New', serif;
+	position:relative;
+	display:block;
+	overflow:hidden;
+	height:23px;
+}
+
+section.mainContent .contentBy p {
+	padding-top:3px;
+	font-size:11px;
+}
+
+section.mainContent ul{
+	text-align: center;
+	border-bottom: 1px solid #66625F;
+}
+
+section.mainContent ul li{
+	font-family: Letter Gothic Std;
+	font-size: 24px;
+	text-transform: uppercase;
+	display: inline;
+	text-align: center;
+	padding: 0 20px 10px 20px;
+	
+}
+.articleTitle, .textBox {
+	margin-top:120px;
+}
+
+.articleTitle h1 {
+	text-align:right;
+	text-transform:uppercase;
+	margin-bottom:0px;
+	font-family: 'Arvo', serif;
+	overflow:hidden;
+	display:block;
+	text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+	letter-spacing:-1px;
+	word-wrap: break-word;
+}
+
+.articleTitle h1.title1 {
+	font-size:44px;
+	color:#4c4846;
+	
+}
+
+.articleTitle h1.title2 {
+	font-size:64px;
+	color:#d79e3d;
+}
+
+.articleTitle h1.title3 {
+	font-size: 100px;
+	color: #4C4846;
+	width: 300px;
+	height: 300px;
+	writing-mode: tb-rl;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);	
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.articleTitle span.title {
+	display:block;
+	text-align:right;
+	background:#4c4846;
+	padding:0px 4px 0;
+	color:white;
+	font-family:'Times New Roman',serif;
+	font-style:italic;
+	font-size:16px;
+}
+
+.articleTitle address {
+	display:block;
+	background:url(../images/address_bkg.png) repeat-x 0 4px;
+	height:15px;
+	margin-top:4px;
+}
+
+.articleTitle address span {
+	float:right;
+	padding:0 0 0 5px;
+}
+
+.textBox p {
+	font-family:'Times New Roman';
+	font-size:16px;
+	color:#444040;
+}
+
+.textBox address {
+	font-family:'Tahoma', Arial, sans-serif;
+	font-size:20px;
+}
+
+.images {
+	margin-top: 118px;
+}
+
+.magmaPhoto img{
+	padding-top: 20px;
+}
+
+footer.articleNote {
+	color:#85817e;
+}
+
+.twoColumn {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	-moz-column-width: 13em;
+	-webkit-column-width: 13em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+}
+
+.treeColumn {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	-moz-column-width: 13em;
+	-webkit-column-width: 13em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+}
+
+footer#footer {
+	margin-top:80px;
+	background: white;
+	padding:6px 0 0 10px;
+	height:22px;
+}
