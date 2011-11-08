@@ -10,7 +10,11 @@ module Magazine
         set :root, APP_ROOT
 
         not_found do
-            'Not found.'
+            haml :"404"
+        end
+        
+        error do
+          haml :"500"
         end
 
         get "/:language/:page" do |language, page|
@@ -20,7 +24,7 @@ module Magazine
 
                 haml :"#{language}/#{page}", :layout => :"mag-nov"
             rescue
-                "Not found"
+                haml :"404"
             end
         end
 
