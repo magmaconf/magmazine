@@ -1,10 +1,9 @@
-require "rubygems"
-require 'rack/contrib'
-require 'rack-rewrite'
+require ::File.dirname(__FILE__) + '/config/boot.rb'
 
-use Rack::Static, :urls => ['/images','/stylesheets'], :root => "public"
-
-use Rack::Rewrite do
-  rewrite '/', '/index.html'
+def app
+    Magazine::Controller
 end
-run Rack::Directory.new('public')
+
+map "/" do
+    run Magazine::Controller
+end

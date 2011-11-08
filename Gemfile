@@ -1,4 +1,5 @@
 source "http://rubygems.org"
 
-gem 'rack-contrib'
-gem 'rack-rewrite'
+gem 'sinatra', '~> 1.3.0'
+gem 'sinatra-contrib'
+gem 'haml'
