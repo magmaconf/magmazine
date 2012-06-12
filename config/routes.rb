@@ -1,5 +1,7 @@
 Magmazine::Application.routes.draw do
   get "home/index"
+  get "es/editorial"
+  get "en/editorial"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
