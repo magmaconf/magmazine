@@ -1,15 +1,6 @@
-APP_ENV  = ENV["RACK_ENV"] ||= "development" unless defined?(APP_ENV)
-APP_ROOT = File.dirname(__FILE__) + '/..' unless defined? APP_ROOT
+require 'rubygems'
 
-begin
-    # Require the preresolved locked set of gems.
-    require File.expand_path('../../.bundle/environment', __FILE__)
-rescue LoadError
-    require 'rubygems'
-    require 'bundler'
-    Bundler.setup
-end
+# Set up gems listed in the Gemfile.
+ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../Gemfile', __FILE__)
 
-Bundler.require(:default, APP_ENV)
-
-require APP_ROOT + '/app/app.rb'
+require 'bundler/setup' if File.exists?(ENV['BUNDLE_GEMFILE'])

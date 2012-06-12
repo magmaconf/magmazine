@@ -1,0 +1,52 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    = yield_content :seo
+    %link{:href => "/stylesheets/print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/stylesheets/screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/stylesheets/styles.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+    /[if lt IE 8]
+      <link href="stylesheets/ie.css" rel="stylesheet" type="text/css" />
+    %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Terminal+Dosis:200", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Anton", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Arvo", :rel => "stylesheet", :type => "text/css"}
+    = yield_content :head
+  %body
+    %section.container
+      %header#topHead.span-24
+        .magmaLogo
+          %a{:href => ""}
+            %img{:alt => "MAGMAZINE", :height => "241", :src => "/images/logo.png", :width => "392"}/
+        %nav.span-15.prepend-9.last
+          = haml :"/partials/#{@language}/nov-nav" if @nav
+
+        = yield
+    %footer#footer
+      .container
+        .fighter
+          %img{:alt => "magmarailer", :height => "208", :src => "/images/mr_luchador.png", :width => "145"}
+        %ul#sponsors-list
+          %li
+            %a{:href => "http://www.crowdint.com", :target => "_blank"}
+              %img{:alt => "crowdint logo", :src => "/images/crowd_footer.png"}/
+          %li
+            %a{:href => "http://www.hybridgroup.com", :target => "_blank"}
+              %img{:alt => "hybrid group logo", :src => "/images/thehybrid_logo.png"}/
+          %li
+            %a{:href => "http://www.billfloat.com/", :target => "_blank"}
+              %img{:alt => "billfloat", :src => "/images/billfloat.png"}/
+          %li
+            %a{:href => "http://www.github.com", :target => "_blank"}
+              %img{:alt => "github", :src => "/images/github_home.png"}/
+          %li
+            %a{:href => "http://www.heroku.com/", :target => "_blank"}
+              %img{:alt => "heroku", :src => "/images/heroku.png"}/
+          %li
+            %a{:href => "http://www.nearsoft.com/", :target => "_blank"}
+              %img{:alt => "nearsoft", :src => "/images/nearsoft_Logo.jpg"}/
+          %li
+            %a{:href => "http://www.tacitknowledge.com/", :target => "_blank"}
+              %img{:alt => "tacit knowledge", :src => "/images/tacid-knowledge.png"}/
+    = haml :"partials/google"

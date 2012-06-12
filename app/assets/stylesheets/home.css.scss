@@ -1,0 +1,185 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: url(../images/bkg.png) repeat 0 0; }
+
+header#topHead {
+  border-bottom: 1px solid #66625f;
+  position: relative;
+  .magmaLogo {
+    position: absolute;
+    left: -20px; }
+  nav {
+    font-family: 'Ubuntu Mono', sans-serif;
+    text-transform: uppercase;
+    margin: 55px 0 18px 0;
+    ul {
+      margin: 0;
+      padding: 0; }
+    li {
+      float: right;
+      list-style-type: none;
+      margin-left: 20px;
+      a {
+        color: #202020;
+        text-decoration: none;
+        &.selected {
+          color: #ed8b09; } } } } }
+
+section {
+  &.coverM {
+    margin-top: 20px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 600px;
+    ul a {
+      color: #202020;
+      text-decoration: none; } }
+  &.mainContent {
+    border-top: 1px solid #dedad6;
+    padding-top: 1px;
+    img.coverM {
+      margin-top: 20px; }
+    .monthlyNo span {
+      font-family: 'Anton', sans-serif;
+      color: #56514f;
+      font-size: 30px;
+      text-transform: uppercase;
+      opacity: 0.4;
+      filter: alpha(opacity = 40);
+      line-height: 23px; }
+    .contentBy {
+      border-bottom: 1px solid #9c9d9e;
+      color: #343433;
+      font-family: 'Courier New', serif;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      height: 23px;
+      p {
+        padding-top: 3px;
+        font-size: 11px; } }
+    ul.subTitles {
+      text-align: center;
+      border-bottom: 1px solid #66625F;
+      li {
+        font-family: Letter Gothic Std;
+        font-size: 24px;
+        text-transform: uppercase;
+        display: inline;
+        text-align: center;
+        padding: 0 20px 10px 20px; } } } }
+
+.articleTitle, .textBox {
+  margin-top: 120px; }
+
+.articleTitle {
+  h1 {
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-family: 'Arvo', serif;
+    overflow: hidden;
+    display: block;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
+    letter-spacing: -1px;
+    word-wrap: break-word;
+    &.title1 {
+      font-size: 42px;
+      color: #4c4846;
+      font-weight: 400; }
+    &.title2 {
+      font-size: 64px;
+      color: #d79e3d; }
+    &.title3 {
+      font-size: 100px;
+      color: #4C4846;
+      width: 300px;
+      height: 300px;
+      writing-mode: tb-rl;
+      -webkit-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      transform: rotate(-90deg); } }
+  span.title {
+    display: block;
+    text-align: right;
+    background: #4c4846;
+    padding: 0px 4px 0;
+    color: white;
+    font-family: 'Times New Roman',serif;
+    font-style: italic;
+    font-size: 16px; }
+  address {
+    display: block;
+    background: url(../images/address_bkg.png) repeat-x 0 4px;
+    height: 15px;
+    margin-top: 4px;
+    span {
+      float: right;
+      padding: 0 0 0 5px; } } }
+
+.textBox {
+  p {
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    color: #444040; }
+  address {
+    font-family: 'Tahoma', Arial, sans-serif;
+    font-size: 20px; } }
+
+.images {
+  margin-top: 118px; }
+
+.magmaPhoto img {
+  padding-top: 20px; }
+
+footer.articleNote {
+  color: #85817e; }
+
+.twoColumn {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 2em;
+  -webkit-column-gap: 2em; }
+
+.treeColumn {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  -moz-column-width: 13em;
+  -webkit-column-width: 13em;
+  -moz-column-gap: 2em;
+  -webkit-column-gap: 2em; }
+
+ul.treeColumn {
+  border: none;
+  li {
+    text-align: center;
+    font-family: 'Courier', serif;
+    margin-bottom: 8px;
+    padding-bottom: 34px;
+    background: url(../images/tweet.png) no-repeat center bottom; } }
+
+footer#footer {
+  margin-top: 80px;
+  background: white;
+  padding: 6px 0 10px 0;
+  .container {
+    position: relative;
+    p {
+      text-align: right; }
+    .fighter {
+      position: absolute;
+      top: -114px;
+      left: -54px; } }
+  ul {
+    li {
+      margin-right: 8px;
+      float: left;
+      list-style-type: none; }
+    float: left;
+    list-style-type: none; } }
