@@ -2,4 +2,5 @@
 *.un~
 tmp/*
 log/*
+db/*
 .DS_Store
