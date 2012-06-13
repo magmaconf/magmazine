@@ -1,0 +1,13 @@
+!!!
+%html
+  = render "/partials/shared/header"
+  %body
+    %section.container
+      %header#topHead.span-24
+        .magmaLogo
+          %a{:href => ""}
+            %img{:alt => "MAGMAZINE", :height => "241", :src => "/images/logo.png", :width => "392"}/
+        %nav.span-15.prepend-9.last
+          = render "/partials/#{@language}/nov-nav" if @nav
+      = yield
+  = render "/partials/shared/footer"
