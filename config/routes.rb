@@ -1,12 +1,16 @@
 Magmazine::Application.routes.draw do
-  get "es/editorial"
-  get "en/editorial"
   get "home/magmazine"
+  get "es/editorial"
   get "/es/tweets"
   get "/es/articulo"
   get "/es/galeria"
   get "/es/infografia"
-  get "/es/editorial"
+  get "en/editorial"
+  get "/en/infography"
+  get "/en/gallery"
+  get "/en/article"
+  get "/en/tweets"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
