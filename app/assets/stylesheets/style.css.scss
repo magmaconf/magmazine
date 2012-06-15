@@ -8,7 +8,8 @@ header#topHead {
     position: absolute;
     left: -20px; }
   nav {
-    font-family: 'Ubuntu Mono', sans-serif;
+    font-family: "Trebuchet MS";
+    font-size: 12px;
     text-transform: uppercase;
     margin: 55px 0 18px 0;
     ul {
@@ -23,6 +24,47 @@ header#topHead {
         text-decoration: none;
         &.selected {
           color: #ed8b09; } } } } }
+    li {
+    ul {
+      background: #333333;
+      display: none;
+      height: auto;
+      padding: 0px;
+      margin: 0px;
+      border: 0px;
+      position: absolute;
+      width: 225px;
+      z-index: 200; }
+    &:hover ul {
+      display: block; }
+    li {
+      background: url('images/sub_sep.gif') bottom left no-repeat;
+      display: block;
+      float: none;
+      margin: 0px;
+      padding: 0px;
+      width: 225px; }
+    &:hover a {
+      background: none; }
+    ul {
+      a {
+        display: block;
+        height: 35px;
+        font-size: 12px;
+        font-style: normal;
+        margin: 0px;
+        padding: 0px 10px 0px 15px;
+        text-align: left;
+        &:hover {
+          background: #2580a2 url('images/hover_sub.gif') center left no-repeat;
+          border: 0px;
+          color: #ffffff;
+          text-decoration: none; } }
+      li:hover a {
+        background: #2580a2 url('images/hover_sub.gif') center left no-repeat;
+        border: 0px;
+        color: #ffffff;
+        text-decoration: none; } } }
 
 section {
   &.coverM {
