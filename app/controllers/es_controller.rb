@@ -19,4 +19,9 @@ class EsController < ApplicationController
     @language = "es"
     @nav = true
   end
+
+  def patrocinadores
+    @language = "en"
+    @nav = true
+  end
 end

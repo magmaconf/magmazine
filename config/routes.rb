@@ -10,6 +10,8 @@ Magmazine::Application.routes.draw do
   get "/en/gallery"
   get "/en/article"
   get "/en/tweets"
+  get "/es/patrocinadores"
+  get "/en/sponsor"
 
 
   # The priority is based upon order of creation:

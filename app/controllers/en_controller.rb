@@ -19,4 +19,9 @@ class EnController < ApplicationController
     @language = "en"
     @nav = true
   end
+
+  def sponsor
+    @language = "en"
+    @nav = true
+  end
 end
