@@ -275,18 +275,14 @@ footer#footer {
   margin-top: 80px;
   padding: 6px 0 10px 0;
   .container {
-    position: relative;
     p {
       text-align: right; }
-    .fighter {
-      position: absolute;
-      top: -114px;
-      left: -54px; } }
+     }
   ul {
-    position: relative;
-    left: 134px;
+    border-top: 1px solid #3c3c3c;
     li {
-      margin-right: 30px;
+      margin-top: 20px;
+      margin-right: 18px;
       float: left;
       list-style-type: none; }
     float: left;
