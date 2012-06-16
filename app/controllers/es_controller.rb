@@ -21,7 +21,43 @@ class EsController < ApplicationController
   end
 
   def patrocinadores
-    @language = "en"
+    @language = "es"
+    @nav = true
+  end
+  def crowdint
+    @language = "es"
+    @nav = true
+  end
+  def rubycentral
+    @language = "es"
+    @nav = true
+  end
+  def github
+    @language = "es"
+    @nav = true
+  end
+  def heroku
+    @language = "es"
+    @nav = true
+  end
+  def ey
+    @language = "es"
+    @nav = true
+  end
+  def allies
+    @language = "es"
+    @nav = true
+  end
+  def nearsoft
+    @language = "es"
+    @nav = true
+  end
+  def aietic
+    @language = "es"
+    @nav = true
+  end
+  def comunidad
+    @language = "es"
     @nav = true
   end
 end

@@ -139,15 +139,16 @@ section {
       font-size: 36px;
       color: #3F3F3F;
       font-weight: 400;
-      line-height: 35px; }
+      line-height: 35px;
+    }
     &.title2 {
       font-size: 64px;
       color: #d79e3d; }
     &.title3 {
-      font-size: 100px;
-      color: #4C4846;
-      width: 300px;
-      height: 300px;
+      font-size: 43px;
+      color: #3F3F3F;
+      font-weight: 400;
+      line-height: 69px;
       writing-mode: tb-rl;
       -webkit-transform: rotate(-90deg);
       -moz-transform: rotate(-90deg);
@@ -217,6 +218,31 @@ ul.treeColumn {
     padding-bottom: 34px;
     background: url(../images/tweet.png) no-repeat center bottom; } }
 
+.main-section{
+
+  img{
+    position: relative;
+    top: 100px;
+    left: 200px;
+  }
+  .half{
+    h3{
+      margin-top: 115px;
+      font-size: 40px;
+      color:
+      #ED8B09;
+      font-family: 'Trebuchet MS';
+      font-weight: bold;
+      position: relative;
+      right: 56px;
+    }
+    p {
+      position: relative;
+      top: 200px;
+      text-align: justify;
+    }
+  }
+}
 footer#footer {
   margin-top: 80px;
   padding: 6px 0 10px 0;
