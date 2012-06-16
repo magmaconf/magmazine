@@ -124,6 +124,10 @@ section {
   margin-top: 120px; }
 
 .articleTitle {
+  .speaker {
+    text-align: right;
+    cursor: pointer;
+  }
   h1 {
     font-size: 36px;
     text-align: right;
@@ -174,7 +178,31 @@ section {
       float: right;
       padding: 0 0 0 5px; } } }
 
+.textBox.keynote {
+    margin-top: 60px;
+  }
+
+.articleTitle.keynote {
+  margin-top: 10px;
+}
+
 .textBox {
+  .summary {
+    img {
+      width: 65%;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+    p {
+      margin-top: 25px;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
   p {
     font-family: 'Trebuchet MS';
     font-size: 11px;
