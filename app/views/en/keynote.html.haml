@@ -1,24 +1,29 @@
 %section.span-24.mainContent
   %header.span-24
     .monthlyNo.span-2.prepend-2
-      %span june2012
+      %span june 2012
     %section.contentBy.span-24.last
       %p Editorial content by: Tania, Karla Magaña, Karla Gonzales, Haro & Mendo
-  %aside.articleTitle.span-5.prepend-1.append-1
-    %h1.title1 The Recount of the Damages
-    %span.title Editorial
+  %aside.articleTitle.span-5.prepend-1.append-1.keynote
+    %h1.title1 Keynotes
+    %span.title Article
     %address.author
       %span by Esteban Cortés
-  %section.textBox.twoColumn.span-15
-    %h3 Hello luchadores & luchadoras
-    %p It is our pleasure to greet you again and to present this Magmazine.  Here, you will find a little bit of what the Magma Rails experience was like during the event, some photos (just a few, since we had a ton of them!), statistic info and your opinions.
-    %p We want to thank again all the sponsors involved in this huge effort to create a bigger Community.  One of the core objectives of Magma Rails is precisely to create Development Communities in México and the rest of the world.  With this in mind, we produced one of the most memorable events of the year.  Some of the speakers and attendees mentioned that this kind of events (huge conferences) usually leaves out the human interaction activities. That is why we focus on making Magma Rails an event that allows to meet new people, talk to colleagues that you can bump into in other conferences but never have a chance to sit down and just chat, or catch a wave together before the sun sets at night.
-    %p We wanted to focus precisely on the experience of the attendees.  Our goal was to create a special atmosphere in which people could get to know each other, and also facilitate the camaraderie and collaboration.  According to some tweets and verbal feedback… we did it!
-    %p This Magmazine will be updated every 3 months, with information about what will come next, and we will follow up on the plans and ideas that were conceived during Magma Rails 3.
-    %p We want to thank once again all of you great people that supported us direct or indirectly in this huge project.  We also want to reassure that we have a commitment on improving the quality of the event for next year.  No more technical difficulties (sorry about that Aaron, ;) )
-    %p Oh, and before I leave: we will open the pre-register for Magma Rails 4 very soon! We are working on the logistics and we want to consider all of you that are positive that will come back for next round.  If you like this one, just wait and see what we are planning for next year... You will love it!
-    %p Regards, Stbn
-    %a{:href => "mailto:info@magmarails.com"} info@magmarails.com
-    / <address>David Padilla</address>
-  / <footer class="span-15 prepend-7 articleNote">This is a note for the article</footer>
+    .speaker#scott.active
+      = image_tag 'scott_chacon.png'
+    .speaker#aaron
+      = image_tag 'aaron_patterson.png'
+    .speaker#nic
+      = image_tag 'dr_nic.png'
+  %section.textBox.keynote
+    .summary
+      = image_tag 'schacon.png', class: 'scott active'
+      %p.scott.twoColumn.span-15.active
+        = render partial: 'partials/en/scott_summary_en'
+      = image_tag 'tenderlove.png', class: 'aaron'
+      %p.aaron.twoColumn.span-15
+        = render partial: 'partials/en/aaron_summary_en'
+      = image_tag 'drnic.png', class: 'nic'
+      %p.nic.twoColumn.span-15
+        = render partial: 'partials/en/nic_summary_en'
 = render '/partials/en/seo'
