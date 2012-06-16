@@ -7,7 +7,7 @@ class EsController < ApplicationController
     @language = "es"
     @nav = true
   end
-  def articulo
+  def conferencias
     @language = "es"
     @nav = true
   end

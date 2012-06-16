@@ -11,7 +11,7 @@ class EnController < ApplicationController
     @language = "en"
     @nav = true
   end
-  def article
+  def keynote
     @language = "en"
     @nav = true
   end
