@@ -10,8 +10,6 @@ Magmazine::Application.routes.draw do
   get "/en/gallery"
   get "/en/keynote"
   get "/en/tweets"
-  get "/es/patrocinadores"
-  get "/en/sponsor"
   get "/en/crowdint"
   get "/es/crowdint"
   get "/en/rubycentral"
