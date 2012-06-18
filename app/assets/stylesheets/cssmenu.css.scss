@@ -16,7 +16,7 @@
     float: left;
     padding: 0px;
     a {
-      background: #333333 url('images/seperator.gif') bottom right no-repeat;
+      background: #E5E5E5 url('images/seperator.gif') bottom right no-repeat;
       color: #cccccc;
       display: block;
       font-weight: normal;
@@ -26,16 +26,16 @@
       text-align: center;
       text-decoration: none;
       &:hover {
-        background: #2580a2 url('images/hover.gif') bottom center no-repeat;
+        background: #E5E5E5 url('images/hover.gif') bottom center no-repeat;
         color: #FFFFFF;
         text-decoration: none; } } }
   ul a {
-    background: #2580a2 url('images/hover.gif') bottom center no-repeat;
+    background: #E5E5E5 url('images/hover.gif') bottom center no-repeat;
     color: #FFFFFF;
     text-decoration: none; }
   li {
     ul {
-      background: #333333;
+      background: #E5E5E5;
       display: none;
       height: auto;
       padding: 0px;
@@ -65,12 +65,12 @@
         padding: 0px 10px 0px 15px;
         text-align: left;
         &:hover {
-          background: #2580a2 url('images/hover_sub.gif') center left no-repeat;
+          background: #E5E5E5 url('images/hover_sub.gif') center left no-repeat;
           border: 0px;
           color: #ffffff;
           text-decoration: none; } }
       li:hover a {
-        background: #2580a2 url('images/hover_sub.gif') center left no-repeat;
+        background: #E5E5E5 url('images/hover_sub.gif') center left no-repeat;
         border: 0px;
         color: #ffffff;
         text-decoration: none; } } }
