@@ -147,7 +147,7 @@ section {
     letter-spacing: -1px;
     word-wrap: break-word;
     &.title1 {
-      font-size: 36px;
+      font-size: 35px;
       color: #3F3F3F;
       font-weight: 400;
       line-height: 35px;
@@ -156,7 +156,7 @@ section {
       font-size: 64px;
       color: #d79e3d; }
     &.title3 {
-      font-size: 43px;
+      font-size: 36px;
       color: #3F3F3F;
       font-weight: 400;
       line-height: 69px;
@@ -169,7 +169,8 @@ section {
   span.title {
     display: block;
     text-align: right;
-    padding: 0px 4px 0;
+    margin-top: 20px;
+    padding: 50px 4px 0;
     color: #ED8B09;
     font-family: 'Bevan';
     font-size: 19px;
