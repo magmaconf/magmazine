@@ -1,10 +1,8 @@
 %head
   %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   = yield :seo
-
   = stylesheet_link_tag :application
   = stylesheet_link_tag :print, media: :print
-
   /[if lt IE 8]
     = stylesheet_link_tag :ie
   %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext", :rel => "stylesheet", :type => "text/css"}

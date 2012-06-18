@@ -1,6 +1,13 @@
 body {
   background: url(../images/bkg.jpg) repeat 0 0; }
 
+.black-header{
+  background: url(../images/top-bkg.png) repeat-x;
+  width: 100%;
+  display: block;
+  height: 60px;
+}
+
 header#topHead {
   border-bottom: 1px solid #66625f;
   position: relative;
@@ -289,6 +296,14 @@ ul.treeColumn {
   }
 }
 footer#footer {
+  .black-footer{
+    background: url(../images/bottom-bkg.png) repeat-x;
+    width: 100%;
+    display: block;
+    height: 54px;
+    position: relative;
+    bottom: -11px;
+  }
   margin-top: 80px;
   padding: 6px 0 10px 0;
   .container {
