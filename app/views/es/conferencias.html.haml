@@ -1,23 +1,29 @@
 %section.span-24.mainContent
   %header.span-24
     .monthlyNo.span-2.prepend-2
-      %span junio2012
+      %span junio 2012
     %section.contentBy.span-24.last
-      %p Contenido editorial: Tania, Karla Magaña, Karla Gonzales, Haro & Mendo
-  %aside.articleTitle.span-5.prepend-1.append-1
-    %h1.title1 En el recuento de los daños
-    %span.title Editorial
+      %p Contenido Editorial: David Padilla
+  %aside.articleTitle.span-5.prepend-1.append-1.keynote
+    %h1.title1 Conferencias Magistrales
+    %span.title Artículo
     %address.author
-      %span por Esteban Cortés
-  %section.textBox.twoColumn.span-15
-    %h3 Hola luchadores y luchadoras
-    %p Es un placer saludarlos de nuevo y presentarles este Magmazine.  Aquí encontrarán un poco de lo que fue nuestra experiencia durante el evento, algunas fotos (solo algunas, no todas porque fueron muchas las que nos hicieron llegar), datos estadísticos y sus opiniones.
-    %p Queremos agradecer a todos los patrocinadores involucrados en este gran esfuerzo por formar una Comunidad.  Uno de los objetivos de Magma Rails es el de fomentar la creación de comunidades de desarrollo a través de México y el resto del mundo.  Con esto en mente, se produjo uno de los eventos más memorables de este año.  Las personas que tuvieron la oportunidad de acompañarnos nos comentaron que este tipo de conferencias usualmente deja fuera el aspecto humano de las interrelaciones.  Nosotros, quisimos enfocarnos en la experiencia de los asistentes. Quisimos crear una atmósfera de colaboración y camaradería, y según varios tweets y comentarios verbales, ¡lo logramos!
-    %p Esta revista digital estará siendo actualizada cada 3 meses, con notas de seguimiento y tal vez más fotos…
-    %p Por ahora, les volvemos a agradecer a todos los que apoyaron directa e indirectamente este gran esfuerzo. Y les reiteramos nuestro compromiso con mejorar la calidad del evento para el siguiente año.  No más dificultades técnicas (lo sentimos mucho Aaron ;) ).
-    %p Ah, antes de irme: estén pendientes del Pre-Registro.  Ya estamos trabajando en la logística, y nos interesa tomar en cuenta a todos los que ya están pensando en asistir a Magma Rails en el 2013.  Ya incluso estamos cambiando el formato del evento y unas cuantas sorpresas más están siendo maquiladas... estoy seguro que ¡les va a encantar!
-    %p Saludos, Stbn
-    %a{:href => "mailto:info@magmarails.com"} info@magmarails.com
-    / <address>David Padilla</address>
-  / <footer class="span-15 prepend-7 articleNote">This is a note for the article</footer>
-= render '/partials/es/seo'
+      %span por David Padilla
+    .speaker#scott.active
+      = image_tag 'scott_chacon.png'
+    .speaker#aaron
+      = image_tag 'aaron_patterson.png'
+    .speaker#nic
+      = image_tag 'dr_nic.png'
+  %section.textBox.keynote
+    .summary
+      = image_tag 'schacon.png', class: 'scott active'
+      %p.scott.twoColumn.span-15.active
+        = render partial: 'partials/es/scott_summary_es'
+      = image_tag 'tenderlove.png', class: 'aaron'
+      %p.aaron.twoColumn.span-15
+        = render partial: 'partials/es/aaron_summary_es'
+      = image_tag 'drnic.png', class: 'nic'
+      %p.nic.twoColumn.span-15
+        = render partial: 'partials/es/nic_summary_es'
+= render '/partials/en/seo'
