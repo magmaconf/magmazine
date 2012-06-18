@@ -1,11 +1,12 @@
 %head
   %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
   = yield :seo
-  %link{:href => "/stylesheets/print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}/
-  %link{:href => "/stylesheets/screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
-  %link{:href => "/assets/style.css.scss", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}/
+
+  = stylesheet_link_tag :application
+  = stylesheet_link_tag :print, media: :print
+
   /[if lt IE 8]
-    <link href="stylesheets/ie.css" rel="stylesheet" type="text/css" />
+    = stylesheet_link_tag :ie
   %link{:href => "http://fonts.googleapis.com/css?family=Ubuntu+Mono&subset=latin,latin-ext", :rel => "stylesheet", :type => "text/css"}
   %link{:href => "http://fonts.googleapis.com/css?family=Terminal+Dosis:200", :rel => "stylesheet", :type => "text/css"}
   %link{:href => "http://fonts.googleapis.com/css?family=Anton", :rel => "stylesheet", :type => "text/css"}
