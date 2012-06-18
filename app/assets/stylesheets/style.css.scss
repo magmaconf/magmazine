@@ -9,6 +9,7 @@ body {
 }
 
 header#topHead {
+  height: 60px;
   border-bottom: 1px solid #66625f;
   position: relative;
   .magmaLogo {
@@ -125,7 +126,6 @@ section {
       } }
     ul.subTitles {
       text-align: center;
-      border-bottom: 1px solid #66625F;
       li {
         font-family: Letter Gothic Std;
         font-size: 24px;
