@@ -5,15 +5,17 @@ class EsController < ApplicationController
   end
 
   def conferencias
+    @speakers = {
+      scott: ['schacon.png','tenderlove.png','drnic.png'],
+      aaron: ['schacon.png','tenderlove.png','drnic.png'],
+      nic: ['schacon.png','tenderlove.png','drnic.png']
+    }
   end
 
   def galeria
   end
 
   def infografia
-  end
-
-  def patrocinadores
   end
 
   def crowdint
@@ -44,9 +46,10 @@ class EsController < ApplicationController
   end
 
   protected
-    def env_var
-      @language = "es"
-      @nav = true
-      @logo = true
-    end
+  
+  def env_var
+    @language = "es"
+    @nav = true
+    @logo = true
+  end
 end

@@ -21,6 +21,7 @@
   %section.textBox.keynote
     .summary
       %div.bar-line
+        = render_keynote_actions
       = image_tag 'schacon.png', class: 'scott active'
       %p.scott.twoColumn.span-15.active
         = render partial: 'partials/es/scott_summary_es'
@@ -31,3 +32,5 @@
       %p.nic.twoColumn.span-15
         = render partial: 'partials/es/nic_summary_es'
 = render '/partials/en/seo'
+= render '/partials/shared/gallery'
+

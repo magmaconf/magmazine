@@ -4,11 +4,6 @@ class EnController < ApplicationController
   def editorial  
   end
 
-  def infography  
-  end
-
-  def gallery 
-  end
   def keynote
     @speakers = {
       scott: ['schacon.png','tenderlove.png','drnic.png'],
@@ -17,11 +12,12 @@ class EnController < ApplicationController
     }
   end
 
-  def sponsor  
+  def infography  
   end
 
-  def sponsor
+  def gallery 
   end
+  
   def crowdint
   end
 
