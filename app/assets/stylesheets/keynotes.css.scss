@@ -1,0 +1,35 @@
+.bar-line {
+  .keynote-action-icon {
+    background-image: url(keynote_icons.png);
+    background-color: #5D5A5A;
+    width: 38px;
+    height: 36px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    margin-top: 4px;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 200px;
+    }
+
+    &:hover {
+     background-color: #F7941D;
+    }
+
+  }
+
+  #keynote-video {
+    background-position: 2px 0px;
+  }
+
+  #keynote-slides {
+    background-position: 2px 72px;
+  }
+
+  #keynote-gallery {
+    background-position: 52px 40px;
+  }
+
+}

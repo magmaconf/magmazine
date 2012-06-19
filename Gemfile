@@ -4,6 +4,7 @@ gem 'rails', '3.2.2'
 gem 'haml'
 
 gem 'jquery-rails'
+gem 'fancybox-rails'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
