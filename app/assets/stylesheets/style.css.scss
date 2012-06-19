@@ -184,13 +184,15 @@ section {
   .speaker {
     text-align: right;
     cursor: pointer;
+    width: 190px;
+    height: 202px;
     p{
       display: none;
     }
     &:hover{
       background: #f7941d;
       opacity: 0.2;
-      height: 80%;
+      
       p{
         color: black;
         font-family: 'Anton';
