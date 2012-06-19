@@ -248,6 +248,16 @@ section {
 
 .textBox {
   .summary {
+    .bar-line{
+      position: relative;
+      left: 281px;
+      top: 282px;
+      width: 65%;
+      height: 65px;
+      display: block;
+      background: black;
+      opacity: 0.6;
+    }
     img {
       width: 65%;
       display: none;
