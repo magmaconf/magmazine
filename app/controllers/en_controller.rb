@@ -1,7 +1,6 @@
 class EnController < ApplicationController
   before_filter :env_var
 
-
   def editorial  
   end
 
