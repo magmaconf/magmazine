@@ -5,10 +5,8 @@
   %body
     %section.container.black-header
     %section.container
-      %header#topHead.span-24
-        .magmaLogo
-          %a{href: "http://www.magmarails.com", target:"_blank"}
-            %img{:alt => "MAGMAZINE", :src => "/images/logo-magma.png"}/
+      %header#topHead
+        = render "/partials/shared/magmalogo" if @logo
         %nav.span-20.prepend-9.last
           = render "/partials/#{@language}/nov-nav" if @nav
       = yield

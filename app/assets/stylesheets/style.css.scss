@@ -10,7 +10,6 @@ body {
 
 header#topHead {
   height: 60px;
-  border-bottom: 1px solid #66625f;
   position: relative;
   .magmaLogo {
     margin-top: 18px;
@@ -40,27 +39,30 @@ header#topHead {
         &.selected {
           color: #ed8b09; } } } } }
     li {
-    ul {
-      background: #E5E5E5;
-      display: none;
-      height: auto;
-      padding: 0px;
-      margin: 0px;
-      border: 0px;
-      position: absolute;
-      width: 225px;
-      z-index: 200; }
-    &:hover ul {
-      display: block; }
-    li {
-      background: url('images/sub_sep.gif') bottom left no-repeat;
-      display: block;
-      float: none;
-      margin: 0px;
-      padding: 0px;
-      width: 225px; }
-    &:hover a {
-      background: none; }
+      ul {
+        background: #E5E5E5;
+        display: none;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        position: absolute;
+        width: 225px;
+        z-index: 200; }
+        &:hover ul {
+          display: block; }
+        li {
+          background: url('../images/sub_sep.gif') bottom left repeat-x;
+          display: block;
+          float: none;
+          margin: 0px;
+          padding: 0px;
+          width: 225px;
+        }
+        &:hover a {
+          background: none;
+          width: 205px;
+        }
     ul {
       a {
         display: block;
@@ -71,19 +73,29 @@ header#topHead {
         padding: 0px 10px 0px 15px;
         text-align: left;
         &:hover {
-          background: #A5A5A5 url('images/hover_sub.gif') center left no-repeat;
+          background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
           border: 0px;
           color: #ffffff;
-          text-decoration: none; } }
+          text-decoration: none; }
+      li{
+        background: url('../images/sub_sep.gif') bottom left no-repeat;
+        display: block;
+        float: none;
+        margin: 0px;
+        padding: 0px;
+        width: 225px; }
+      &:hover a {
+        background: none; }
+      }
       li:hover a {
-        background: #A5A5A5 url('images/hover_sub.gif') center left no-repeat;
+        background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
         border: 0px;
         color: #ffffff;
         text-decoration: none; } } }
 
 section {
   &.coverM {
-    margin-top: 20px;
+    margin-top: -50px;
     text-align: center;
     overflow: hidden;
     min-height: 600px;
@@ -96,6 +108,13 @@ section {
       img{
         position: relative;
         right: 100px;
+        margin-top: 0 !important;
+      }
+.borderland{
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
       }
     }
     border-top: 1px solid #dedad6;
@@ -108,7 +127,8 @@ section {
       font-size: 10px;
       text-transform: uppercase;
       position: relative;
-      top: 23px;
+      left: 100px;
+      top: 5px;
       line-height: 23px; }
     .contentBy {
       border-bottom: 1px solid #9c9d9e;
@@ -118,15 +138,23 @@ section {
       position: relative;
       display: block;
       overflow: hidden;
-      height: 23px;
+      border-top: 1px solid black;
+      height: 38px;
+      bottom: 25px;
       p {
-        padding-top: 3px;
+        padding-top: 9px;
         font-size: 11px;
         text-align: right;
       } }
     ul.subTitles {
       text-align: center;
+      top: -187px;
+      position: relative;
+
       li {
+        &#es-align{
+          margin-right: 100px;
+        }
         font-family: Letter Gothic Std;
         font-size: 24px;
         text-transform: uppercase;
@@ -142,10 +170,15 @@ section {
 }
 .rey-banner{
   position: relative;
-  top: 90px;
+  top: 7px;
+}
+.edit-title{
+  text-transform: uppercase;
+  position: relative;
+  top: 36px;
 }
 .articleTitle, .textBox {
-  margin-top: 120px; }
+  margin-top: 60px; }
 
 .articleTitle {
   .speaker {
@@ -157,17 +190,17 @@ section {
     text-align: right;
     text-transform: uppercase;
     margin-bottom: 0px;
-    font-family: 'Arvo', serif;
+    font-family: 'Anton';
     overflow: hidden;
     display: block;
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5);
     letter-spacing: -1px;
     word-wrap: break-word;
     &.title1 {
-      font-size: 35px;
+      font-size: 36px;
       color: #3F3F3F;
-      font-weight: 400;
-      line-height: 35px;
+      line-height: 32px;
+      text-align: right;
     }
     &.title2 {
       font-size: 64px;
@@ -191,6 +224,7 @@ section {
     font-family: 'Bevan';
     font-size: 19px;
     font-weight: bold;
+    text-transform: uppercase;
   }
   address {
     display: block;
@@ -198,6 +232,7 @@ section {
     height: 15px;
     margin-top: 4px;
     span {
+      text-transform: uppercase;
       font-size: 10px;
       font-family: 'Trebuchet MS';
       float: right;
