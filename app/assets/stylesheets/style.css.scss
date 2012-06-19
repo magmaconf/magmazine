@@ -184,6 +184,24 @@ section {
   .speaker {
     text-align: right;
     cursor: pointer;
+    p{
+      display: none;
+    }
+    &:hover{
+      background: #f7941d;
+      opacity: 0.2;
+      height: 80%;
+      p{
+        color: black;
+        font-family: 'Anton';
+        display: block;
+        font-size: 16px;
+        opacity: 1;
+        position: relative;
+        top: 175px;
+        right: 80px;
+      }
+    }
   }
   h1 {
     font-size: 36px;
