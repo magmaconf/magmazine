@@ -51,7 +51,9 @@ header#topHead {
         &:hover ul {
           display: block; }
         li {
-          background: url('../images/sub_sep.gif') bottom left repeat-x;
+          border-bottom: 1px solid gray;
+          border-left: 1px solid gray;
+          border-right: 1px solid gray;
           display: block;
           float: none;
           margin: 0px;
@@ -59,7 +61,7 @@ header#topHead {
           width: 225px;
           &:hover a {
             background: none;
-            width: 205px;
+            width: 202px;
           }
           a {
             display: block;
@@ -72,13 +74,14 @@ header#topHead {
             &:hover {
               background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
               border: 0px;
-              color: #ffffff;
-              text-decoration: none; }
+              color: #E5E5E5;
+              text-decoration: none; 
+              vertical-align: middle;
+            }
             &:hover a {
               background: none; }
           }
         }
-          
     } //limenu
 }//TopHead
 
@@ -159,6 +162,7 @@ section {
   text-transform: uppercase;
   position: relative;
   top: 36px;
+  font-family: 'Trebuchet MS';
 }
 .articleTitle, .textBox {
   margin-top: 60px; }
