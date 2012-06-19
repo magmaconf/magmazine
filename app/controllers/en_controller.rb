@@ -9,13 +9,19 @@ class EnController < ApplicationController
 
   def gallery 
   end
-
-  def keynote  
+  def keynote
+    @speakers = {
+      scott: ['schacon.png','tenderlove.png','drnic.png'],
+      aaron: ['schacon.png','tenderlove.png','drnic.png'],
+      nic: ['schacon.png','tenderlove.png','drnic.png']
+    }
   end
 
   def sponsor  
   end
 
+  def sponsor
+  end
   def crowdint
   end
 
@@ -42,11 +48,13 @@ class EnController < ApplicationController
   
   def community
   end
+
   protected 
-    def env_var
-      @language = "en"
-      @nav = true
-      @logo = true
-    end
+
+  def env_var
+    @language = "en"
+    @nav = true
+    @logo = true
+  end
 
 end
