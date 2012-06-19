@@ -15,7 +15,6 @@ header#topHead {
     margin-top: 18px;
     position: absolute;
     left: -20px; }
-
   nav {
     font-family: "Trebuchet MS";
     font-size: 12px;
@@ -37,7 +36,7 @@ header#topHead {
         color: #202020;
         text-decoration: none;
         &.selected {
-          color: #ed8b09; } } } } }
+          color: #ed8b09; } } } }//nav
     li {
       ul {
         background: #E5E5E5;
@@ -58,40 +57,30 @@ header#topHead {
           margin: 0px;
           padding: 0px;
           width: 225px;
+          &:hover a {
+            background: none;
+            width: 205px;
+          }
+          a {
+            display: block;
+            height: 35px;
+            font-size: 12px;
+            font-style: normal;
+            margin: 0px;
+            padding: 0px 10px 0px 15px;
+            text-align: left;
+            &:hover {
+              background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
+              border: 0px;
+              color: #ffffff;
+              text-decoration: none; }
+            &:hover a {
+              background: none; }
+          }
         }
-        &:hover a {
-          background: none;
-          width: 205px;
-        }
-    ul {
-      a {
-        display: block;
-        height: 35px;
-        font-size: 12px;
-        font-style: normal;
-        margin: 0px;
-        padding: 0px 10px 0px 15px;
-        text-align: left;
-        &:hover {
-          background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
-          border: 0px;
-          color: #ffffff;
-          text-decoration: none; }
-      li{
-        background: url('../images/sub_sep.gif') bottom left no-repeat;
-        display: block;
-        float: none;
-        margin: 0px;
-        padding: 0px;
-        width: 225px; }
-      &:hover a {
-        background: none; }
-      }
-      li:hover a {
-        background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
-        border: 0px;
-        color: #ffffff;
-        text-decoration: none; } } }
+          
+    } //limenu
+}//TopHead
 
 section {
   &.coverM {
@@ -109,12 +98,6 @@ section {
         position: relative;
         right: 100px;
         margin-top: 0 !important;
-      }
-.borderland{
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-top: 1px solid black;
       }
     }
     border-top: 1px solid #dedad6;
