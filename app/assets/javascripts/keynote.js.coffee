@@ -9,10 +9,12 @@ $().ready ->
 
   $('.image-gallery').fancybox()
 
+
   # Keynote action buttons
   $('section.keynote').on 'click', '.bar-line .keynote-action-icon', ->
-
     currentSpeaker = $('.speaker.active').attr('id')
-
     if @id is 'keynote-gallery'
       $(".#{currentSpeaker}-slides a:first").click()
+
+
+

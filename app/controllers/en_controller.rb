@@ -1,39 +1,39 @@
 class EnController < ApplicationController
   before_filter :env_var
 
-  def editorial  
+  def editorial
   end
 
   def keynote
     @speakers = {
-      scott: ['schacon.png','tenderlove.png','drnic.png'],
-      aaron: ['schacon.png','tenderlove.png','drnic.png'],
-      nic: ['schacon.png','tenderlove.png','drnic.png']
+      scott: ['scott1.jpg','scott2.jpg','scott3.jpg','scott4.jpg'],
+      aaron: ['aaron1.jpg','aaron2.jpg','aaron3.jpg','aaron4.jpg'],
+      nic: ['nic1.jpg','nic2.jpg','nic3.jpg','nic4.jpg']
     }
   end
 
-  def infography  
+  def infography
   end
 
-  def gallery 
+  def gallery
   end
-  
+
   def crowdint
   end
 
-  def rubycentral  
+  def rubycentral
   end
 
-  def github  
+  def github
   end
 
-  def heroku  
+  def heroku
   end
 
-  def ey  
+  def ey
   end
 
-  def allies 
+  def allies
   end
 
   def nearsoft
@@ -41,11 +41,11 @@ class EnController < ApplicationController
 
   def aietic
   end
-  
+
   def community
   end
 
-  protected 
+  protected
 
   def env_var
     @language = "en"
