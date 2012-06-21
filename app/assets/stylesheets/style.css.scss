@@ -41,52 +41,6 @@ header#topHead {
         }
         &.selected {
           color: #ed8b09; } } } }//nav
-    li {
-      ul {
-        background: #E5E5E5;
-        display: none;
-        height: auto;
-        padding: 0px;
-        margin: 0px;
-        border: 0px;
-        position: absolute;
-        width: 225px;
-        z-index: 200; }
-        &:hover ul {
-          display: block; }
-        li {
-          border-bottom: 1px solid gray;
-          border-left: 1px solid gray;
-          border-right: 1px solid gray;
-          display: block;
-          float: none;
-          margin: 0px;
-          padding: 0px;
-          width: 225px;
-          &:hover a {
-            background: none;
-            width: 202px;
-          }
-          a {
-            display: block;
-            height: 35px;
-            font-size: 12px;
-            font-style: normal;
-            margin: 0px;
-            padding: 0px 10px 0px 15px;
-            text-align: left;
-            &:hover {
-              background: #A5A5A5 url('../images/hover_sub.gif') center left no-repeat;
-              border: 0px;
-              color: #E5E5E5;
-              text-decoration: none;
-              vertical-align: middle;
-            }
-            &:hover a {
-              background: none; }
-          }
-        }
-    } //limenu
 }//TopHead
 
 section {
@@ -99,7 +53,7 @@ section {
       color: #202020;
       text-decoration: none; } }
   &.mainContent {
-    min-height: 580px;
+    min-height: 780px;
     .move-on{
       img{
         position: relative;
@@ -128,7 +82,7 @@ section {
       position: relative;
       display: block;
       overflow: hidden;
-      border-top: 1px solid black;
+      border-top: 1px solid #9C9D9E;
       height: 38px;
       bottom: 25px;
       p {
@@ -197,6 +151,54 @@ section {
       }
     }
   }
+  ul {
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    position: relative;
+    right: 34px;
+    width: 225px;
+    z-index: 200;
+    li {
+      border-bottom: 1px solid #9C9D9E;
+      list-style-type: none;
+      float: none;
+      padding: 0px;
+      width: 225px;
+      text-align: right;
+      span{
+        position: relative;
+        bottom: 10px;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        vertical-align: middle;
+        font-family: 'Trebuchet MS';
+        font-size: 11px;
+      }
+      img {
+        margin-left: 9px;
+        margin-right: -9px;
+      }
+      a {
+        width: 225px;
+        height: 40px;
+        margin-top: 5px;
+        color: black;
+        text-decoration: none;
+        height: 35px;
+        font-size: 12px;
+        font-style: normal;
+        padding: 0px 10px 0px 15px;
+        &:hover {
+          color: #ed8b09;
+          text-decoration: none;
+          vertical-align: middle;
+        }
+      }
+    }
+    }//aside left menu
   h1 {
     font-size: 36px;
     text-align: right;
@@ -329,29 +331,17 @@ ul.treeColumn {
 
 .main-section{
 
-  img{
-    position: relative;
-    top: 30px;
-    left: 200px;
-  }
   .half{
-    width: 520px;
-    h3{
-      margin-top: 115px;
-      font-size: 40px;
-      color:
-      #ED8B09;
-      font-family: 'Trebuchet MS';
-      font-weight: bold;
-      position: relative;
-      right: 56px;
-    }
+    width: 600px;
+    margin-left: 270px;
     p {
-      width: 520px;
-      left: 351px;
-      position: relative;
-      top: 200px;
-      text-align: justify;
+      img{
+        float: left;
+      }
+      float: right;
+      font-family: 'Trebuchet MS';
+      width: 600px;
+      text-align: left;
     }
   }
 }
@@ -362,7 +352,7 @@ footer#footer {
     display: block;
     height: 54px;
     position: relative;
-    bottom: -11px;
+    bottom: -50px;
   }
   margin-top: 80px;
   padding: 6px 0 10px 0;

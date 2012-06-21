@@ -28,6 +28,8 @@ Magmazine::Application.routes.draw do
   get "/es/aietic"
   get "/en/community"
   get "/es/comunidad"
+  get "/en/sponsor"
+  get "/es/patrocinadores"
 
 
   # The priority is based upon order of creation:
