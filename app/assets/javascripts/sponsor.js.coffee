@@ -1,8 +1,8 @@
 $().ready ->
   $(".spon").click ->
-    $(".spon, .sponsoring div").removeClass "active"
+    $(".spon, .sponsoring span").removeClass "active"
     $(this).addClass "active"
     spon = $(this).attr('id')
-    $(".sponsoring a").removeClass('active')
-    $(".sponsoring a.#{spon}").addClass('active')
+    $(".sponsoring span").removeClass('active')
+    $(".sponsoring span.#{spon}").addClass('active')
     $("div.#{spon}").addClass('active')

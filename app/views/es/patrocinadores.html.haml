@@ -8,50 +8,55 @@
     %h1.title1 Patrocinadores
     %span.title Nuestros Patrocinadores
     %address.author
-      %span by Esteban Cortés
+      %span por Esteban Cortés
     %ul
       %li
-        %a{:href => "/es/rubycentral"}
+        %a.spon#rubycentral.active
           %span Ruby Central
           = image_tag 'ruby_central.png'
       %li
-        %a{:href => "/es/crowdint"}
+        %a.spon#crowdint
           %span Crowd Interactive
           = image_tag 'crowd.png'
       %li
-        %a{:href => "/es/github"}
+        %a.spon#github
           %span Github
           = image_tag 'github.png'
       %li
-        %a{:href => "/es/heroku"}
+        %a.spon#heroku
           %span Heroku
           = image_tag 'heroku.png'
       %li
-        %a{:href => "/es/ey"}
+        %a.spon#engineyard
           %span Engine Yard
           = image_tag 'engineyard.png'
       %li
-        %a{:href => "/es/allies"}
+        %a.spon#softwareallies
           %span Software Allies
           = image_tag 'Software_allies.png'
       %li
-        %a{:href => "/es/nearsoft"}
+        %a.spon#nearsoft
           %span Nearsoft
           = image_tag 'nearsoft.png'
       %li
-        %a{:href => "/es/aietic"}
+        %a.spon#aietic
           %span Aietic
           = image_tag 'aietic.png'
-
   .center.main-section
-    .main-header
-      = image_tag 'Image_crowd.png'
-    .content
-      .inner-section
-        .half
-          %p
-            = image_tag 'sponsors/crowd.svg'
-            Somos una consultoría líder de Ruby on Rails establecida en México. Actualmente hacemos negocios con Startups de los Estados Unidos. Nos especializamos en crear y crecer aplicaciones de Rails, aumentando tu equipo de TI en sitio o remoto. Elegimos nuestros proyectos cuidadosamente, porque solo trabajamos con compañias en que creemos.
-
-          //= link_to (http://www.crowdint.com), target: '_blank'
-        .clear
+    .sponsoring
+      %span.rubycentral.active
+        = render partial: 'partials/es/rubycentral'
+      %span.crowdint
+        = render partial: 'partials/es/crowdint'
+      %span.github
+        = render partial: 'partials/es/github'
+      %span.heroku
+        = render partial: 'partials/es/heroku'
+      %span.engineyard
+        = render partial: 'partials/es/engineyard'
+      %span.softwareallies
+        = render partial: 'partials/es/softwareallies'
+      %span.nearsoft
+        = render partial: 'partials/es/nearsoft'
+      %span.aietic
+        = render partial: 'partials/es/aietic'
