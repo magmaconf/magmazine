@@ -138,6 +138,8 @@ section {
     &:hover{
       background: #f7941d;
       opacity: 0.2;
+      width: 190px;
+      height: 202px;
 
       p{
         color: black;
@@ -198,7 +200,7 @@ section {
         }
       }
     }
-    }//aside left menu
+    }//aside left sponsors menu
   h1 {
     font-size: 36px;
     text-align: right;
@@ -330,7 +332,14 @@ ul.treeColumn {
     background: url(../images/tweet.png) no-repeat center bottom; } }
 
 .main-section{
-
+  .sponsoring{
+    span{
+      display:none;
+    &.active{
+        display:block;
+      }
+    }
+  }
   .half{
     width: 600px;
     margin-left: 270px;
