@@ -1,8 +1,11 @@
 Magmazine::Application.routes.draw do
+
   get "home/magmazine"
   get "es/editorial"
   get "/es/tweets"
   get "/es/conferencias"
+  get "/en/sponsor"
+  get "/es/patrocinadores"
   get "/es/galeria"
   get "/es/infografia"
   get "en/editorial"
@@ -10,26 +13,8 @@ Magmazine::Application.routes.draw do
   get "/en/gallery"
   get "/en/keynote"
   get "/en/tweets"
-  get "/en/crowdint"
-  get "/es/crowdint"
-  get "/en/rubycentral"
-  get "/es/rubycentral"
-  get "/en/github"
-  get "/es/github"
-  get "/en/heroku"
-  get "/es/heroku"
-  get "/en/ey"
-  get "/es/ey"
-  get "/en/allies"
-  get "/es/allies"
-  get "/en/nearsoft"
-  get "/es/nearsoft"
-  get "/en/aietic"
-  get "/es/aietic"
   get "/en/community"
   get "/es/comunidad"
-  get "/en/sponsor"
-  get "/es/patrocinadores"
 
 
   # The priority is based upon order of creation:

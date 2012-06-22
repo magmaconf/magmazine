@@ -1,9 +1,6 @@
 class EnController < ApplicationController
   before_filter :env_var
 
-  def editorial
-  end
-
   def keynote
     @speakers = {
       scott: ['scott1.jpg','scott2.jpg','scott3.jpg','scott4.jpg'],
@@ -19,5 +16,4 @@ class EnController < ApplicationController
     @nav = true
     @logo = true
   end
-
 end

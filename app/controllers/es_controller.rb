@@ -1,9 +1,6 @@
 class EsController < ApplicationController
   before_filter :env_var
 
-  def editorial
-  end
-
   def conferencias
     @speakers = {
       scott: ['scott1.jpg','scott2.jpg','scott3.jpg','scott4.jpg'],
