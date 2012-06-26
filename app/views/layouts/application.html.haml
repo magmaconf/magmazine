@@ -5,9 +5,6 @@
   %body
     %section.container.black-header
     %section.container
-      %header#topHead
-        = render "/partials/shared/magmalogo" if @logo
-        %nav.span-20.prepend-9.last
-          = render "/partials/#{@language}/nov-nav" if @nav
+      = render "/partials/shared/header"
       = yield
   = render "/partials/shared/footer"

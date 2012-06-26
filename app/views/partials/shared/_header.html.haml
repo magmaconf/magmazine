@@ -1,0 +1,4 @@
+%header#topHead
+  = render "/partials/shared/magmalogo" if @logo
+  %nav.span-20.prepend-9.last
+    = render "/partials/#{@language}/nov-nav" if @nav
