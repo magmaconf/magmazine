@@ -1,5 +1,5 @@
 - @speakers.each do |speaker, images|
-  %div{ class: "#{speaker}-slides", style: 'display: none;'}
+  %div{ class: "#{speaker}-gallery", style: 'display: none;'}
     - images.each do |image|
       %a{ href: image_path(image), class: 'image-gallery', rel: "#{speaker}-gallery"}
         = image_tag image

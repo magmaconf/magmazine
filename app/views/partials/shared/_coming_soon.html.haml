@@ -1,0 +1,5 @@
+- @coming.each do |speaker, images|
+  %div{ class: "#{speaker}-video", style: 'display: none;'}
+    - images.each do |image|
+      %a{ href: image_path(image), class: 'image-video', rel: "#{speaker}-video"}
+        = image_tag image

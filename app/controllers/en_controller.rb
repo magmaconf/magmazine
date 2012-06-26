@@ -7,6 +7,13 @@ class EnController < ApplicationController
       aaron: ['aaron1.jpg','aaron2.jpg','aaron3.jpg','aaron4.jpg'],
       nic: ['nic1.jpg','nic2.jpg','nic3.jpg','nic4.jpg']
     }
+    @coming = {
+      scott: ['coming.jpg'],
+      aaron: ['coming.jpg'],
+      nic: ['coming.jpg']
+    }
+
+
   end
 
   protected
