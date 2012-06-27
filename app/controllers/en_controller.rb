@@ -12,8 +12,6 @@ class EnController < ApplicationController
       aaron: ['coming.jpg'],
       nic: ['coming.jpg']
     }
-
-
   end
 
   protected

@@ -1,0 +1,1 @@
+requiere 'spec_helper'
