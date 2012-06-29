@@ -1,5 +1,7 @@
 Magmazine::Application.routes.draw do
 
+  resources :static, only: :show
+
   get "home/magmazine"
   get "es/editorial"
   get "/es/tweets"
@@ -15,6 +17,8 @@ Magmazine::Application.routes.draw do
   get "/en/tweets"
   get "/en/community"
   get "/es/comunidad"
+
+
 
 
   # The priority is based upon order of creation:
