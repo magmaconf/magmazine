@@ -1,4 +1,4 @@
-$().ready ->
+$().ready ->   
 	$(".speaker").click ->
   	$(".speaker, .summary p").removeClass "active"
   	$(this).addClass "active"
@@ -9,14 +9,15 @@ $().ready ->
 
   $('.image-gallery').fancybox()
   $('.image-video').fancybox()
+  
+
+  
   $(".scott-slides").live 'click', ->
-    $("#scott-slides").addClass('erase')
-    $("#scott-slides").dialog()
-    $("#scott-slides").removeClass('erase')
+    $("#scott-slides").dialog().css({width:"500px", height: "400px", margin: "0 0 600px 0"}).show().find("iframe").css({width:"500px", height: "400px"})
   $(".aaron-slides").live 'click', ->
-    $("#aaron-slides").dialog()
+    $("#aaron-slides").dialog().css({width:"500px", height: "400px", margin: "0 0 600px 0"}).show().find("iframe").css({width:"500px", height: "400px"})
   $(".nic-slides").live 'click', ->
-    $("#nic-slides").dialog()
+    $("#nic-slides").dialog().css({width:"500px", height: "400px", margin: "0 0 600px 0"}).show().find("iframe").css({width:"500px", height: "400px"})
 
 
   # Keynote action buttons
