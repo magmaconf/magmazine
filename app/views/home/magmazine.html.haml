@@ -6,6 +6,6 @@
       %li#es-align
         %a{href: "es/editorial"} Español
       %li
-        %a{href:  "en/editorial"} English
+        = link_to t('language.en'), {locale: 'en'}, {class: "#{selected(:en)}"}, "en/editorial"
       %li.bling
         = image_tag "star.png"
