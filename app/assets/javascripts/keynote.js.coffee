@@ -9,7 +9,14 @@ $().ready ->
 
   $('.image-gallery').fancybox()
   $('.image-video').fancybox()
-  $('.slides').dialog()
+  $(".scott-slides").live 'click', ->
+    $("#scott-slides").addClass('erase')
+    $("#scott-slides").dialog()
+    $("#scott-slides").removeClass('erase')
+  $(".aaron-slides").live 'click', ->
+    $("#aaron-slides").dialog()
+  $(".nic-slides").live 'click', ->
+    $("#nic-slides").dialog()
 
 
   # Keynote action buttons
@@ -20,4 +27,4 @@ $().ready ->
     if @id is 'keynote-video'
       $(".#{currentSpeaker}-video a:first").click()
     if @id is 'keynote-slides'
-      $(".#{currentSpeaker}-slides a:first").click()
+      $(".#{currentSpeaker}-slides ").click()
