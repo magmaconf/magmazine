@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
-gem 'haml'
+gem 'haml-rails'
 gem 'jquery-rails'
 gem 'fancybox-rails'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -12,13 +13,6 @@ group :assets do
   gem 'jquery-ui-rails'
 end
 
-group :development do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
 
 group :development, :test do
   gem 'rspec-rails'
