@@ -22,16 +22,6 @@ describe "Serve Static Pages" do
       page.should have_css("img[alt='Magma in Numbers']")
     end
 
-    it "should serve the tweets page" do
-      visit page_path(page: 'tweets')
-      page.should have_content("Which conference you liked the most and why?")
-    end
-
-    it "should serve the sponsors page" do
-      visit page_path(page: 'sponsor')
-      page.should have_content("Our Sponsors")
-    end
-
     it "should serve the sponsors page" do
       visit page_path(page: 'sponsor')
       page.should have_content("Our Sponsors")
