@@ -1,10 +1,10 @@
 !!!
 %html
   = javascript_include_tag  :application
-  = render "/partials/shared/head"
+  = render "partials/shared/head"
   %body
     %section.container.black-header
     %section.container
-      = render "/partials/shared/header"
+      = render "partials/shared/header"
       = yield
-  = render "/partials/shared/footer"
+  = render "partials/shared/footer"

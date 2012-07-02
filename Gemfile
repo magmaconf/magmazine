@@ -13,7 +13,9 @@ group :assets do
   gem 'jquery-ui-rails'
 end
 
-
 group :development, :test do
+  gem 'guard-rspec'
   gem 'rspec-rails'
+  gem 'capybara'
+  gem 'launchy'
 end
