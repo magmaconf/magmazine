@@ -3,7 +3,7 @@ Magmazine::Application.routes.draw do
   scope 'admin' do
     devise_for :users
 
-    resources :contents
+    resources :contents, module: :admin
   end
 
   scope "(:language)", locale: /en|es/ do
