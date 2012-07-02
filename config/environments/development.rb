@@ -43,4 +43,6 @@ Magmazine::Application.configure do
     :address => "localhost",
     :port => 2525,
   }
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end

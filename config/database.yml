@@ -18,7 +18,7 @@ test: &test
 
 production:
   <<: *server
-  database: magmazien
+  database: magmazine
 
 cucumber:
   <<: *test
