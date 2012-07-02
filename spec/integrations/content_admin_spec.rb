@@ -17,6 +17,7 @@ describe "Content Admin" do
       click_button 'Sign in'
 
       click_link 'Editorial'
+      click_link 'Text'
       click_link 'main_title'
       fill_in 'main_title_content', with: 'The new main title'
       visit page_path(page: :editorial)
