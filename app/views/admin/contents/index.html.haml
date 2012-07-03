@@ -1,0 +1,4 @@
+%ul
+  - @translations.each do |translation|
+    %li
+      = link_to "#{translation}", content_path(translation)
