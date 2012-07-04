@@ -1,9 +1,14 @@
 class Admin::ContentsController < ActionController::Base
-
   before_filter :authenticate_user!
+
+  layout 'admin'
 
   def index
     @translations = filtered_translations available_translations
+  end
+
+  def show
+    @translation = I18n.t params[:id]
   end
 
   private

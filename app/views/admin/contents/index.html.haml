@@ -1,4 +1,7 @@
-%ul
-  - @translations.each do |translation|
-    %li
-      = link_to "#{translation}", content_path(translation)
+.row
+  .span4
+    %ul
+      - @translations.each do |translation|
+        %li
+          = link_to "#{translation}", content_path(translation)
+  .span8

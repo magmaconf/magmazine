@@ -18,6 +18,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
   gem 'jquery-ui-rails'
+  gem 'bootstrap-sass'
 end
 
 group :development, :test do
@@ -25,4 +26,5 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'launchy'
+  gem 'annotate'
 end
