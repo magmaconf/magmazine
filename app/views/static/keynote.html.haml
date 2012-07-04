@@ -1,0 +1,42 @@
+%section.span-24.mainContent
+  %header.span-24
+    .monthlyNo.span-2.prepend-2
+      %span june 2012
+    %section.contentBy.span-24.last
+      %p
+  %aside.articleTitle.span-5.prepend-1.append-1.keynote
+    %h1.title1 Keynotes
+    %span.title Article
+    %address.author
+      %span by David Padilla
+    .speaker#scott.active
+      %p Scott Chacon
+      = image_tag 'scott_chacon.png'
+    .speaker#aaron
+      %p Aaron Patterson
+      = image_tag 'aaron_patterson.png'
+    .speaker#nic
+      %p Dr. Nick
+      = image_tag 'dr_nic.png'
+  %section.textBox.keynote
+    .summary
+      %div.bar-line
+        = render_keynote_actions
+      = image_tag 'schacon.png', class: 'scott active'
+      %p.scott.twoColumn.span-15.active
+        = render partial: 'partials/scott_summary_en'
+
+      = image_tag 'tenderlove.png', class: 'aaron'
+      %p.aaron.twoColumn.span-15
+        = render partial: 'partials/aaron_summary_en'
+
+      = image_tag 'drnic.png', class: 'nic'
+      %p.nic.twoColumn.span-15
+        = render partial: 'partials/nic_summary_en'
+
+= render 'partials/seo'
+= render 'partials/shared/gallery'
+= render 'partials/shared/coming_soon'
+= render 'partials/shared/scott_keynote'
+= render 'partials/shared/aaron_keynote'
+= render 'partials/shared/drnic_keynote'
