@@ -1,12 +1,12 @@
 en:
-  language:
-    es: Spanish
-    en: English
-  menu:
-    home: Cover
-    editorial: Editorial
-    innumbers: Magma in Numbers
-    gallery: Gallery
-    keynotes: Keynotes
-    sponsors: Sponsors
-    community: Community
+  editorial:
+    title1: "This is merely the beginning"
+    content_html: |
+      <p>It is our pleasure to greet you again and to present this Magmazine.  Here, you will find a little bit of what the Magma Rails experience was like during the event, some photos (just a few, since we had a ton of them!), statistic info and your opinions.</p>
+      <p>We want to thank again all the sponsors involved in this huge effort to create a bigger Community.  One of the core objectives of Magma Rails is precisely to create Development Communities in México and the rest of the world.  With this in mind, we produced one of the most memorable events of the year.  Some of the speakers and attendees mentioned that this kind of events (huge conferences) usually leave out the human interaction activities. That is why we focus on making Magma Rails an event that allows to meet new people, talk to colleagues that you can bump into in other conferences but never have a chance to sit down and just chat, or catch a wave together before the sun sets at night.</p>
+      <p>We wanted to focus precisely on the experience of the attendees.  Our goal was to create a special atmosphere in which people could get to know each other, and also facilitate the camaraderie and collaboration.  According to some tweets and verbal feedback… we did it!</p>
+      <p>This Magmazine will be updated every 3 months, with information about what will come next, and we will follow up on the plans and ideas that were conceived during Magma Rails 3.</p>
+      <p>We want to thank once again all of you great people that supported us direct or indirectly in this huge project.  We also want to reassure that we have a commitment on improving the quality of the event for next year.  No more technical difficulties (sorry about that Aaron, ;) )</p>
+      <p>Oh, and before I leave: we will open the pre-register for Magma Rails 4 very soon! We are working on the logistics and we want to consider all of you that are positive that will come back for next round.  If you enjoyed this one, just wait and see what we are planning for next year... You will love it!</p>
+      <p>Regards,</p>
+      <p>Stbn</p>
