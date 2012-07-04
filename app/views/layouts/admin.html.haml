@@ -11,4 +11,6 @@
             %li.active
               %a{href: "#"} Translations
     .container
+      = flash[:notice]
+      = flash[:error]
       = yield

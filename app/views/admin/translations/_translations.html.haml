@@ -1,0 +1,6 @@
+%ul
+  - @translations.each do |translation|
+    %li
+      - clazz = translation == @translation ? 'selected' : ''
+      = link_to "#{translation.locale}.#{translation.key}",
+        translation_path(translation), class: clazz

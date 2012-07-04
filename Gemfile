@@ -22,6 +22,7 @@ group :assets do
 end
 
 group :development, :test do
+  gem 'database_cleaner'
   gem 'guard-rspec'
   gem 'rspec-rails'
   gem 'capybara'
