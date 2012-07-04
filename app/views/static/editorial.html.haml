@@ -3,16 +3,16 @@
     .monthlyNo.span-2.prepend-2
       %span june 2012
     %section.contentBy.span-24.last
-      %p EDITORIAL CONTENT BY: Esteban, David Padilla, Juan Pablo, Tania, Karla Magaña, Haro & Mendo
+      %p= t ('magmazine.editorial.contributors')
   %aside.articleTitle.span-5.prepend-1.append-1
-    %h1.title1= t ('editorial.title1')
-    %span.title Editorial
+    %h1.title1= t ('magmazine.editorial.title1')
+    %span.title= t ('magmazine.editorial.title')
     %address.author
-      %span by Esteban Cortés
+      %span= t ('magmazine.editorial.author')
   %section.span-15.rey-banner
     = image_tag 'editorial.png'
   %section.edit-title.span-15
-    %h2 Hello luchadores & luchadoras
-  %section.textBox.twoColumn.span-15.prepend-7= t ('editorial.content_html')
+    %h2= t ('magmazine.editorial.title2')
+  %section.textBox.twoColumn.span-15.prepend-7= t ('magmazine.editorial.content_html')
 
 = render 'partials/seo'
