@@ -1,5 +1,7 @@
 es:
   magmazine:
+    date:
+      actual_date: "Junio 2012"
     top_menu:
       home: Portada
       editorial: Editorial
