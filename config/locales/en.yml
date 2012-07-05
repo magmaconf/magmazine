@@ -1,5 +1,13 @@
 en:
   magmazine:
+    top_menu:
+      home: Cover
+      editorial: Editorial
+      innumbers: Magma in Numbers
+      gallery: Gallery
+      keynotes: Keynotes
+      sponsors: Sponsors
+      community: Community
     editorial:
       title1: "This is merely the beginning"
       title: "Editorial"
@@ -40,3 +48,7 @@ en:
         <p>See you at Magma Rails 2013.</p>
         <p>Regards,</p>
         <p>David Padilla</p>
+    gallery:
+      title1: "Gallery"
+      title:  "Magma in Pictures"
+      author: "by Crowd Interactive"
