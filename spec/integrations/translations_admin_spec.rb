@@ -17,10 +17,10 @@ describe "Translations admin" do
       fill_in 'user_password', with: '123test'
       click_button 'Sign in'
 
-      click_link 'en.editorial.title1'
+      click_link 'en.magmazine.editorial.title1'
       fill_in 'translation_value', with: 'The new main title'
       click_button 'Update'
-      page.should have_content('en.editorial.title1 has been updated')
+      page.should have_content('en.magmazine.editorial.title1 has been updated')
       visit page_path(language: :en, page: :editorial)
       page.should have_content('The new main title')
     end
@@ -34,10 +34,10 @@ describe "Translations admin" do
       fill_in 'user_password', with: '123test'
       click_button 'Sign in'
 
-      click_link 'en.editorial.content_html'
+      click_link 'en.magmazine.editorial.content_html'
       fill_in 'translation_value', with: '<p>test1 test2 test3</p>'
       click_button 'Update'
-      page.should have_content('en.editorial.content_html has been updated')
+      page.should have_content('en.magmazine.editorial.content_html has been updated')
       visit page_path(language: :en, page: :editorial)
       page.should have_css("p:contains('test1 test2 test3')")
     end
