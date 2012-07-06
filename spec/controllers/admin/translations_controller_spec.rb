@@ -13,17 +13,14 @@ describe Admin::TranslationsController do
     end
   end
 
-  describe "#show" do
+  describe "#edit" do
     let(:translation) do
       Translation.create locale: 'en', key: 'test', value: 'test'
     end
 
-    before do
-
-    end
 
     specify do
-      get :show, id: translation.id
+      get :edit, id: translation.id
       response.should be_successful
       assigns(:translation).should eq(translation)
     end
