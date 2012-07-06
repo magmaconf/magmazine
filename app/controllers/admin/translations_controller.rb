@@ -3,8 +3,11 @@ class Admin::TranslationsController < ActionController::Base
   before_filter :load_translations
 
   layout 'admin'
+  def index
 
-  def show
+  end
+
+  def edit
     @translation = Translation.find params[:id]
   end
 
@@ -17,7 +20,7 @@ class Admin::TranslationsController < ActionController::Base
   end
 
   def load_translations
-    @translations = Translation.all
+    @translations = Translation.find(:all, :conditions =>["key LIKE?","%magmazine%"])
   end
 
 end
