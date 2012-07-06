@@ -2,6 +2,25 @@
 require 'spec_helper'
 
 describe "Translations admin" do
+  describe "Try if link is filtering related translations" do
+    before do
+      I18n.backend.load_translations
+      User.create! email: 'test@magmazine.com', password: '123test'
+    end
+
+    it "gallery link exist and filter options" do
+      visit translations_path
+      fill_in 'user_email', with: 'test@magmazine.com'
+      fill_in 'user_password', with: '123test'
+      click_button 'Sign in'
+
+      find("a.gallery").should be_visible
+      click_link 'gallery'
+      page.should have_content('en.magmazine.gallery')
+    end
+
+
+  end
   describe "Changing text content" do
     before do
       I18n.backend.load_translations

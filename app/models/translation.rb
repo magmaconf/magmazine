@@ -1,6 +1,11 @@
 class Translation < ActiveRecord::Base
 
+  def filtered_trans(query)
+    self.where(:all, :conditions =>["key LIKE?","%#{query}%"])
+  end
 end
+
+
 # == Schema Information
 #
 # Table name: translations

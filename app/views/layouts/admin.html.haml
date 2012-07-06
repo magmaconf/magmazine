@@ -10,6 +10,8 @@
           %ul.nav
             %li.active
               %a{href: "#"} Translations
+            %li
+              = link_to "Gallery", filtered_translations_path(:gallery)
     .container
       = flash[:notice]
       = flash[:error]

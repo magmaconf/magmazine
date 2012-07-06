@@ -1,10 +1,8 @@
 class Admin::TranslationsController < ActionController::Base
   before_filter :authenticate_user!
   before_filter :load_translations
-
   layout 'admin'
   def index
-
   end
 
   def edit
@@ -20,7 +18,7 @@ class Admin::TranslationsController < ActionController::Base
   end
 
   def load_translations
-    @translations = Translation.find(:all, :conditions =>["key LIKE?","%magmazine%"])
+    query = params[:query] || 'magmazine'
+    @translations ||= Translation.filtered_trans(query)
   end
-
 end
