@@ -1,10 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'bootstrap-sass'
+gem 'fancybox-rails'
 gem 'haml-rails'
 gem 'jquery-rails'
-gem 'fancybox-rails'
 gem 'pg'
+gem 'rails', '3.2.2'
+gem 'sass-rails',   '~> 3.2.3'
 
 # So that we can support and admin panel
 gem 'devise'
@@ -14,18 +16,16 @@ gem 'i18n-active_record', git: 'git://github.com/svenfuchs/i18n-active_record.gi
   require: 'i18n/active_record'
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
   gem 'jquery-ui-rails'
-  gem 'bootstrap-sass'
+  gem 'uglifier', '>= 1.0.3'
 end
 
 group :development, :test do
+  gem 'annotate'
+  gem 'capybara'
   gem 'database_cleaner'
   gem 'guard-rspec'
-  gem 'rspec-rails'
-  gem 'capybara'
   gem 'launchy'
-  gem 'annotate'
+  gem 'rspec-rails'
 end
