@@ -2,6 +2,7 @@ class Admin::TranslationsController < ActionController::Base
   before_filter :authenticate_user!
   before_filter :load_translations
   layout 'admin'
+
   def index
   end
 
