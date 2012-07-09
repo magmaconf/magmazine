@@ -15,8 +15,19 @@ describe "Translations admin" do
       click_button 'Sign in'
 
       find("a.gallery").should be_visible
-      click_link 'gallery'
+      click_link 'Gallery'
       page.should have_content('en.magmazine.gallery')
+    end
+
+    it "translation link exist and filter options" do
+      visit translations_path
+      fill_in 'user_email', with: 'test@magmazine.com'
+      fill_in 'user_password', with: '123test'
+      click_button 'Sign in'
+
+      find("a.translation").should be_visible
+      click_link 'Translation'
+      page.should have_content('.title1')
     end
 
 
