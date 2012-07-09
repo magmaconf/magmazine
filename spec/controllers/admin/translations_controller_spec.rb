@@ -37,4 +37,15 @@ describe Admin::TranslationsController do
     end
   end
 
+  describe "#load_translations" do
+    let(:query){}
+
+    specify do
+      Translation.should_receive(:filtered_trans).with("magmazine")
+      get :index
+      response.should be_succes
+    end
+
+  end
+
 end
