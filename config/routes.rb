@@ -3,6 +3,7 @@ Magmazine::Application.routes.draw do
   scope 'admin' do
     devise_for :users
     match "/translations/:query", to: "admin/translations#index", query: /\D+/ , as: :filtered_translations
+    match "/translations/:id/:query", to: "admin/translations#edit", query: /\D+/ , as: :edit_filtered_translations
     resources :translations, module: :admin, format: false
 
   end
@@ -15,7 +16,7 @@ Magmazine::Application.routes.draw do
 
 end
 #== Route Map
-# Generated on 04 Jul 2012 13:10
+# Generated on 10 Jul 2012 10:58
 #
 #             user_session POST   /admin/users/sign_in(.:format)       devise/sessions#create
 #     destroy_user_session DELETE /admin/users/sign_out(.:format)      devise/sessions#destroy
@@ -29,6 +30,7 @@ end
 #   edit_user_registration GET    /admin/users/edit(.:format)          devise/registrations#edit
 #                          PUT    /admin/users(.:format)               devise/registrations#update
 #                          DELETE /admin/users(.:format)               devise/registrations#destroy
+#    filtered_translations        /admin/translations/:query(.:format) admin/translations#index {:query=>/\D+/}
 #             translations GET    /admin/translations                  admin/translations#index
 #                          POST   /admin/translations                  admin/translations#create
 #          new_translation GET    /admin/translations/new              admin/translations#new

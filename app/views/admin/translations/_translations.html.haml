@@ -3,4 +3,4 @@
     %li
       - clazz = translation == @translation ? 'selected' : ''
       = link_to "#{translation.locale}.#{translation.key}",
-        edit_translation_path(translation), class: clazz
+        edit_filtered_translations_path(translation), class: clazz

@@ -9,7 +9,7 @@
         .container
           %ul.nav
             %li.active
-              = link_to "Translation", translations_path, class: 'translation'
+              = link_to "Translation", filtered_translations_path(:magmazine), class: 'translation'
             %li
               = link_to "Editorial", filtered_translations_path(:editorial), class: 'editorial'
             %li
@@ -19,7 +19,7 @@
             %li
               = link_to "Sponsors", filtered_translations_path(:sponsors), class: 'sponsor'
             %li
-              = link_to "Communities", filtered_translations_path(:community), class: 'community'
+              = link_to "Communities", filtered_translations_path(:communit), class: 'community'
     .container
       = flash[:notice]
       = flash[:error]
