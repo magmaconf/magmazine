@@ -14,15 +14,17 @@
             %li.active
               = link_to "Translation", filtered_translations_path(:magmazine), class: 'translation'
             %li
-              = link_to "Editorial", filtered_translations_path(:editorial), class: 'editorial'
+              = link_to "Editorial", filtered_translations_path("#{:editorial}."), class: 'editorial'
             %li
-              = link_to "Gallery", filtered_translations_path(:gallery), class: 'gallery'
+              = link_to "Gallery", filtered_translations_path("#{:gallery}."), class: 'gallery'
             %li
-              = link_to "Keynotes", filtered_translations_path(:keynotes), class: 'keynote'
+              = link_to "Keynotes", filtered_translations_path("#{:keynotes}."), class: 'keynote'
             %li
-              = link_to "Sponsors", filtered_translations_path(:sponsors), class: 'sponsor'
+              = link_to "Sponsors", filtered_translations_path("#{:sponsors}."), class: 'sponsor'
             %li
-              = link_to "Communities", filtered_translations_path(:communit), class: 'community'
+              = link_to "Communities", filtered_translations_path(:communities), class: 'community'
+            %li
+              = link_to "Menus", filtered_translations_path(:top_menu), class: 'top_menu'
             %li
               %a
                 |

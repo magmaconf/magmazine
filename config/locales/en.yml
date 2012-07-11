@@ -1,7 +1,7 @@
 en:
   magmazine:
     date:
-      actual_date: "June 2012"
+      actual_date_html: "June 2012"
     top_menu:
       home: Cover
       editorial: Editorial
