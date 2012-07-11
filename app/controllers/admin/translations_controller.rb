@@ -14,10 +14,13 @@ class Admin::TranslationsController < ActionController::Base
   def update
 
     translation = Translation.find params[:id]
-    translation.update_attributes params[:value]
-
-    redirect_to filtered_translations_path(params[:translation][:query]),
-      notice: "#{translation.locale}.#{translation.key} has been updated"
+    if translation.update_attribute :value,params[:translation][:value]
+      flash[:notice] = "#{translation.locale}.#{translation.key} has been updated"
+      redirect_to filtered_translations_path(params[:translation][:query])
+    else
+      redirect_to :back
+        flash[:error] = "#{translation.locale}.#{translation.key} Could not updated"
+    end
   end
 
   def load_translations

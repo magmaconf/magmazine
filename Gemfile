@@ -7,6 +7,10 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '3.2.2'
 gem 'sass-rails',   '~> 3.2.3'
+gem 'tinymce-rails'
+
+#An IRB alternative and runtime developer console
+gem 'pry'
 
 # So that we can support and admin panel
 gem 'devise'

@@ -3,6 +3,6 @@
     = render 'translations'
   .span8
     = form_for @translation do |form|
-      = form.text_area :value
+      = form.text_area :value, :class => "tinymce", :rows => 40, :cols => 120
       = form.hidden_field 'query', value: "#{@query}"
       = form.submit
