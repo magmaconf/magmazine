@@ -3,7 +3,8 @@ Magmazine::Application.routes.draw do
   scope 'admin' do
     devise_for :users
     match "/translations/:query", to: "admin/translations#index", query: /\D+/ , as: :filtered_translations
-    match "/translations/:id/:query", to: "admin/translations#edit", query: /\D+/ , as: :edit_filtered_translations
+    match "/translations/:id/edit/:query", to: "admin/translations#edit", query: /\D+/ , as: :edit_filtered_translation
+    match "/translations/:id/:query", to: "admin/translations#update", query: /\D+/ , as: :update_filtered_translation
     resources :translations, module: :admin, format: false
 
   end

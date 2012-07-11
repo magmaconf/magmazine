@@ -28,22 +28,33 @@ describe Admin::TranslationsController do
 
   describe "#update" do
     let(:translation) do
-      Translation.create locale: 'en', key: 'test', value: 'test'
+      Translation.create id: 1, locale: 'en', key: 'test', value: 'test'
+    end
+
+    before do
+      Translation.should_receive(:find).and_return translation
+      translation.should_receive(:update_attributes).and_return true
+      put :update, id: translation.id, translation: {query: "something"}
     end
 
     specify do
-      put :update, id: translation.id
-      response.should redirect_to(translations_path)
+      response.should redirect_to(filtered_translations_path("something"))
     end
+
+    specify do
+      flash[:notice].should_not be_nil
+    end
+
   end
 
   describe "#load_translations" do
-    let(:query){}
+    before do
+      Translation.should_receive(:filtered_trans).with "magmazine"
+    end
 
     specify do
-      Translation.should_receive(:filtered_trans).with("magmazine")
       get :index
-      response.should be_succes
+      response.should be_success
     end
 
   end

@@ -4,4 +4,5 @@
   .span8
     = form_for @translation do |form|
       = form.text_area :value
+      = form.hidden_field 'query', value: "#{@query}"
       = form.submit
