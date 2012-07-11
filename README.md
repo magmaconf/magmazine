@@ -12,7 +12,7 @@ $ rake db:setup
 ```
 $ rails c
 User.create!({ email: "user@email.com", password: "12345",
-confirm_password: "12345" })
+password_confirmation: "12345" })
 ```
 ### Load Translations with I18n Active Record
 
