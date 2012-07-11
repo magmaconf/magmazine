@@ -1,5 +1,5 @@
 class Translation < ActiveRecord::Base
-
+  serialize :value
   scope :filtered_trans, lambda {|query| where(["key LIKE?","%#{query}%"])}
 
 end
