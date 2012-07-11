@@ -33,16 +33,37 @@ describe Admin::TranslationsController do
 
     before do
       Translation.should_receive(:find).and_return translation
-      translation.should_receive(:update_attributes).and_return true
-      put :update, id: translation.id, translation: {query: "something"}
     end
 
-    specify do
-      response.should redirect_to(filtered_translations_path("something"))
+    context "When update is successful" do
+      before do
+        translation.should_receive(:update_attribute).and_return true
+        put :update, id: translation.id, translation: {query: "something"}
+      end
+
+      specify do
+        response.should redirect_to(filtered_translations_path("something"))
+      end
+
+      specify do
+        flash[:notice].should_not be_nil
+      end
+
     end
 
-    specify do
-      flash[:notice].should_not be_nil
+    context "When update is not successful" do
+      before do
+        translation.should_receive(:update_attribute).and_return
+        put :update, id: translation.id, translation: {query: "something"}, back: "http://test.host/admin/translations/somethings"
+      end
+      specify do
+        response.should redirect_to("http://test.host/admin/translations/something")
+      end
+
+      specify do
+        flash[:error].should be_nil
+      end
+
     end
 
   end
