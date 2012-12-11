@@ -3,11 +3,9 @@
   %head
     %title Magazine
     = stylesheet_link_tag    "application"
-    = stylesheet_link_tag cms_css_path(@cms_site.id, @cms_layout.slug)
+    = stylesheet_link_tag cms_css_path(@cms_site.id, @cms_layout.identifier)
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
     %section.container
-      %header#topHead.span-24
-      %section.span-24.mainContent
-        = yield
+      = yield
