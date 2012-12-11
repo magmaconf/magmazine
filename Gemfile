@@ -6,6 +6,8 @@ gem 'comfortable_mexican_sofa'
 gem 'json'
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'redcarpet'
+gem 'quiet_assets'
 
 group :development, :test do
   gem 'sqlite3'
@@ -23,8 +25,3 @@ group :assets do
   #
   gem 'uglifier', '>= 1.0.3'
 end
-
-
-
-
-
