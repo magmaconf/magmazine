@@ -8,6 +8,9 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'redcarpet'
 gem 'quiet_assets'
+gem 'aws-sdk'
+
+gem 'pg'
 
 group :development, :test do
   gem 'sqlite3'

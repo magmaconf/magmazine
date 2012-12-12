@@ -16,7 +16,7 @@ ComfortableMexicanSofa.configure do |config|
   # Default url to access admin area is http://yourhost/cms-admin/
   # You can change 'cms-admin' to 'admin', for example. To disable admin area
   # entirely set this to '' or nil
-  #   config.admin_route_prefix = 'cms-admin'
+  config.admin_route_prefix = 'magma-content'
 
   # When arriving at /cms-admin you may chose to redirect to arbirtary path,
   # for example '/cms-admin/users'
@@ -34,7 +34,10 @@ ComfortableMexicanSofa.configure do |config|
   # the upload method and appropriate settings based on Paperclip.  For S3 see:
   # http://rdoc.info/gems/paperclip/2.3.8/Paperclip/Storage/S3, and for
   # filesystem see: http://rdoc.info/gems/paperclip/2.3.8/Paperclip/Storage/Filesystem
-  #   config.upload_file_options = {:url => '/system/:class/:id/:attachment/:style/:filename'}
+  config.upload_file_options = {
+    :storage => :s3,
+    :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
+  }
 
   # Sofa allows you to setup entire site from files. Database is updated with each
   # request (if necessary). Please note that database entries are destroyed if there's
@@ -101,8 +104,8 @@ end
 
 # Default credentials for ComfortableMexicanSofa::HttpAuth
 # YOU REALLY WANT TO CHANGE THIS BEFORE PUTTING YOUR SITE LIVE
-ComfortableMexicanSofa::HttpAuth.username = 'username'
-ComfortableMexicanSofa::HttpAuth.password = 'password'
+ComfortableMexicanSofa::HttpAuth.username = 'luchadores'
+ComfortableMexicanSofa::HttpAuth.password = '1U6h2D0r3S'
 
 # If you need to inject some html in cms admin views you can define what partial
 # should be rendered into the following areas:
