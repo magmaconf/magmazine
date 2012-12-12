@@ -19,3 +19,7 @@
 
 /public/assets
 .sass-cache
+
+*.un~
+*.swp
+public/system/*
