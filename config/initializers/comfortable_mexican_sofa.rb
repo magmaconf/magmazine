@@ -37,7 +37,7 @@ ComfortableMexicanSofa.configure do |config|
   config.upload_file_options = {
     :storage => :s3,
     :s3_credentials => "#{Rails.root}/config/s3.yml"
-  } if Rails.env == :production
+  } if Rails.env == 'production'
 
   # Sofa allows you to setup entire site from files. Database is updated with each
   # request (if necessary). Please note that database entries are destroyed if there's
