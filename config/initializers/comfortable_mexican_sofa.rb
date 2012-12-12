@@ -36,7 +36,7 @@ ComfortableMexicanSofa.configure do |config|
   # filesystem see: http://rdoc.info/gems/paperclip/2.3.8/Paperclip/Storage/Filesystem
   config.upload_file_options = {
     :storage => :s3,
-    :s3_credentials => "#{RAILS_ROOT}/config/s3.yml"
+    :s3_credentials => "#{Rails.root}/config/s3.yml"
   }
 
   # Sofa allows you to setup entire site from files. Database is updated with each
