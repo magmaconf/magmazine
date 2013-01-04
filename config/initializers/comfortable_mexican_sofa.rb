@@ -98,7 +98,7 @@ ComfortableMexicanSofa.configure do |config|
   # production env with dev/testing envs.
   # e.g. config.site_aliases = {'host.com' => 'host.inv', 'host_a.com' => ['host.lvh.me', 'host.dev']}
   # Default is nil (not used)
-  #   config.hostname_aliases = nil
+  config.hostname_aliases = { 'magmarails.com' => 'magmaconf.com' }
 
 end
 
