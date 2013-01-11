@@ -6,4 +6,16 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require jPanelMenu-1.1.0.min
+//= require_self
+
+(($) ->
+  jPM = $.jPanelMenu(
+    menu: '#menu-mobile'
+    openPosition: '82%'
+    animated: true
+    openEasing: 'linear'
+  )
+
+  jPM.on()
+) jQuery
