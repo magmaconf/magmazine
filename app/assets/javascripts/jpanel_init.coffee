@@ -1,4 +1,4 @@
-(($) ->
+$ ->
   jPM = $.jPanelMenu(
     menu: '#menu-mobile'
     openPosition: '82%'
@@ -10,4 +10,3 @@
   )
 
   jPM.on()
-) jQuery
