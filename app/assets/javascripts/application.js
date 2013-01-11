@@ -6,5 +6,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jPanelMenu-1.1.0.min
-//= require_tree .
+//#= require jPanelMenu-1.1.0.min
+//#= require_tree .

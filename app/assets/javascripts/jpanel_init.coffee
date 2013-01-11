@@ -2,8 +2,11 @@
   jPM = $.jPanelMenu(
     menu: '#menu-mobile'
     openPosition: '82%'
-    animated: true
-    openEasing: 'linear'
+    animated: false
+    beforeOpen: ->
+      ($ '.menu-m').css 'left', '82%'
+    beforeClose: ->
+      ($ '.menu-m').css 'left', '0%'
   )
 
   jPM.on()
