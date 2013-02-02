@@ -3,6 +3,7 @@ $ ->
     menu: '#menu-mobile'
     openPosition: '82%'
     animated: false
+    keyboardShortcuts: false
     beforeOpen: ->
       ($ '.menu-m').css 'left', '82%'
     beforeClose: ->
